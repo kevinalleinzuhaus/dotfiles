@@ -1,0 +1,18 @@
+[include]
+    path = ~/.gitconfig.local  
+
+[core]
+    editor = nvim
+    pager = delta
+
+[checkout]
+	defaultRemote = origin
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+
+[merge]
+    conflictStyle = zdiff3
