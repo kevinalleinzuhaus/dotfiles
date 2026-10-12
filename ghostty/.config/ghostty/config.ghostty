@@ -1,6 +1,10 @@
 font-family = "ProggyClean Nerd Font Mono"
 font-size = 24
+
 theme = "Gruvbox Light"
+
+window-decoration = none
+window-show-tab-bar = never
 window-padding-x = 16
 window-padding-y = 16
 
