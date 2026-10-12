@@ -45,3 +45,5 @@ alias update="sudo pacman -Syu"
 alias get="sudo pacman -S "
 alias v="nvim "
 alias ls="eza --icons"
+
+eval "$(starship init zsh)"
