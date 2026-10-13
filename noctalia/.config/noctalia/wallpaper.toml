@@ -1,0 +1,9 @@
+[wallpaper]
+enabled = true
+fill_mode = "crop"
+transition = ["fade"]
+
+directory = "/home/kevin/downloads/wallpaper"
+
+[wallpaper.default]
+path = "/home/kevin/downloads/wallpaper/map.png"
