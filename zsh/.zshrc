@@ -2,7 +2,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder
 
 DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -16,6 +16,8 @@ plugins=(
     zsh-vi-mode # jeffreytse/zsh-vi-mode
 )
 
+
+
 source $ZSH/oh-my-zsh.sh
 
 export LANG=en_US.UTF-8
@@ -26,9 +28,13 @@ else
   export EDITOR='vim'
 fi
 
-###############
-### HISTORY ###
-###############
+
+# --- BINDINGS -----------------------------------
+
+bindkey -M vicmd '<esc><esc>' sudo-command-line
+
+
+# --- HISTORY ------------------------------------
 
 HISTFILE=~/.zsh_history
 HISTSIZE=50000
@@ -40,10 +46,13 @@ setopt HIST_REDUCE_BLANKS
 setopt SHARE_HISTORY
 setopt EXTENDED_HISTORY
 
-# alias
+# --- ALIAS --------------------------------------
+
 alias update="sudo pacman -Syu"
 alias get="sudo pacman -S "
 alias v="nvim "
 alias ls="eza --icons"
+
+# --- TOOLS --------------------------------------
 
 eval "$(starship init zsh)"
