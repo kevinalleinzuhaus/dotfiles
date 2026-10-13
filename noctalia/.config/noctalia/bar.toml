@@ -1,0 +1,13 @@
+[bar.default]
+position = "top"
+enabled = true
+
+radius = 0
+widget_spacing = 12
+font_scale = 1.2
+scale = 1.2
+padding = 14
+
+start = ["workspaces"]
+center = ["clock"]
+end    = ["tray", "notifications", "network", "bluetooth", "volume", "brightness", "battery", "control-center", "session"]

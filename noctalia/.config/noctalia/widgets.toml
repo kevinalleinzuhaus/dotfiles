@@ -1,0 +1,16 @@
+[widget.volume.actions]
+middle = "volume-mute"
+scroll_up = "volume-up 10%"
+scroll_down = "volume-down 10%"
+
+[widget.network]
+show_label = false
+show_vpn_label = true
+vpn_status = "both"
+
+[widget.clock]
+format = "{:%H:%M}\n{:%d/%m/%Y}"
+
+[widget.workspaces]
+style = "focus_hint"
+show_icons = false

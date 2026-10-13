@@ -1,0 +1,5 @@
+[shell]
+font_family = "JetBrains Mono"
+
+[accessibility]
+ui_scale = 1.2

@@ -1,0 +1,5 @@
+[theme]
+mode = "dark"
+shell_mode = "follow"
+source = "builtin"
+builtin = "Gruvbox"
